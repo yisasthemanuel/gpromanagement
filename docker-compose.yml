@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  gprocup-front:
+    build: .
+    image: yisasthemanuel/gprocup-front:1.0.0
+    container_name: yisas-gprocup-front
+    ports:
+      - "8080:80"
+    restart: unless-stopped
