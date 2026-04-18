@@ -601,9 +601,9 @@
 	function loadCupData() {
 		// Datos de entrada para la petición
 		var dataIn = {
-			idSeason: 109,
-			idRace: 9,
-			cupEdition: 62
+			idSeason: 110,
+			idRace: 2,
+			cupEdition: 63
 		};
 
 		//callService('theurl', dataIn, 'POST', function(response) {
@@ -617,24 +617,20 @@
 		// Petición devuelta
 		var response = {
 			idSeason: dataIn.idSeason,
-			edition: 'LXII', // Será LXII
+			edition: 'LXIII',
 			idRace: dataIn.idRace,
-			imgName: 'S109.03.01.03.png',
+			imgName: 'S110.01.04.01.png',
 			quarterFinals: {
 				managerQF01: {
-					idManager: 11,
-					codeManager: 'ANIA',
-					altManager: 'ANIA',
-					cups: 6,
+					idManager: 24,
+					codeManager: 'STEVEN',
+					altManager: 'STEVEN',
+					cups: 0,
 					positions: [
-						{ position: 1 },
-						{ position: 6 },
-						{ position: 3 },
-						{ position: 2 },
-						{ position: 2 }
+						{position: 5}
 					],
-					score: 5,
-					winsRound: true
+					score: 1,
+					winsRound: false
 				},
 				managerQF02: {
 					idManager: 28,
@@ -642,201 +638,77 @@
 					altManager: 'MATTI',
 					cups: 0,
 					positions: [
-						{ position: 8 },
-						{ position: 28 },
-						{ position: 29 },
-						{ position: 24 },
-						{ position: 18 }
+						{position: 7}
 					],
 					score: 0,
 					winsRound: false
 				},
 				managerQF03: {
-					idManager: 8,
-					codeManager: 'MIKKO',
-					altManager: 'MIKKO',
-					cups: 7,
-					positions: [
-						{ position: 3 },
-						{ position: 3 },
-						{ position: 4 },
-						{ position: 1 },
-						{ position: 1 }
-					],
-					score: 4,
-					winsRound: true
-				},
-				managerQF04: {
-					idManager: 26,
-					codeManager: 'JENS',
-					altManager: 'JENS',
-					cups: 0,
-					positions: [
-						{ position: 3 },
-						{ position: 3 },
-						{ position: 6 },
-						{ position: 8 },
-						{ position: 16 }
-					],
-					score: 1,
-					winsRound: false
-				},
-				managerQF05: {
-					idManager: 7,
-					codeManager: 'GEOFF',
-					altManager: 'GEOFF',
-					cups: 7,
-					positions: [
-						{ position: 1 },
-						{ position: 1 },
-						{ position: 4 },
-						{ position: 1 },
-						{ position: 2 }
-					],
-					score: 5,
-					winsRound: true
-				},
-				managerQF06: {
-					idManager: 23,
-					codeManager: 'DANIEL',
-					altManager: 'DANIEL',
-					cups: 2,
-					positions: [
-						{ position: 5 },
-						{ position: 11 },
-						{ position: 15 },
-						{ position: 9 },
-						{ position: 21 }
-					],
-					score: 0,
-					winsRound: false
-				},
-				managerQF07: {
-					idManager: 22,
-					codeManager: 'JENNE',
-					altManager: 'JENNE',
-					cups: 3,
-					positions: [
-						{ position: 10 },
-						{ position: 7 },
-						{ position: 6 },
-						{ position: 4 },
-						{ position: 3 }
-					],
-					score: 0,
-					winsRound: false
-				},
-				managerQF08: {
-					idManager: 1,
-					codeManager: 'JESUS',
-					altManager: 'JESUS',
-					cups: 6,
-					positions: [
-						{ position: 1 },
-						{ position: 1 },
-						{ position: 1 },
-						{ position: 1 },
-						{ position: 1 }
-					],
-					score: 5,
-					winsRound: true
-				}
-			},
-			semifinals: {
-				managerSF01: {
 					idManager: 11,
 					codeManager: 'ANIA',
 					altManager: 'ANIA',
 					cups: 6,
 					positions: [
-						{ position: 13 },
-						{ position: 18 },
-						{ position: 8 },
-						{ position: 16 },
-						{ position: 4 }
+						{position: 10}
 					],
 					score: 0,
 					winsRound: false
 				},
-				managerSF02: {
-					idManager: 8,
-					codeManager: 'MIKKO',
-					altManager: 'MIKKO',
-					cups: 7,
+				managerQF04: {
+					idManager: 9,
+					codeManager: 'NEVZA',
+					altManager: 'NEVZA',
+					cups: 10,
 					positions: [
-						{ position: 2 },
-						{ position: 4 },
-						{ position: 2 },
-						{ position: 4 },
-						{ position: 2 }
-					],
-					score: 5,
-					winsRound: true
-				},
-				managerSF03: {
-					idManager: 7,
-					codeManager: 'GEOFF',
-					altManager: 'GEOFF',
-					cups: 7,
-					positions: [
-						{ position: 5 },
-						{ position: 1 },
-						{ position: 1 },
-						{ position: 1 },
-						{ position: 2 }
-					],
-					score: 2,
-					winsRound: false
-				},
-				managerSF04: {
-					idManager: 1,
-					codeManager: 'JESUS',
-					altManager: 'JESUS',
-					cups: 6,
-					positions: [
-						{ position: 1 },
-						{ position: 1 },
-						{ position: 3 },
-						{ position: 1 },
-						{ position: 1 }
-					],
-					score: 3,
-					winsRound: true
-				}
-			},
-			final: {
-				managerF01: {
-					idManager: 8,
-					codeManager: 'MIKKO',
-					altManager: 'MIKKO',
-					cups: 7,
-					positions: [
-						{ position: 1 },
-						{ position: 2 },
-						{ position: 3 }
+						{position: 8}
 					],
 					score: 1,
 					winsRound: false
 				},
-				managerF02: {
-					idManager: 1,
-					codeManager: 'JESUS',
-					altManager: 'JESUS',
-					cups: 6,
+				managerQF05: {
+					idManager: 22,
+					codeManager: 'JENNE',
+					altManager: 'JENNE',
+					cups: 3,
 					positions: [
-						{ position: 2 },
-						{ position: 1 },
-						{ position: 2 }
+						{position: 2}
 					],
-					score: 2,
+					score: 1,
+					winsRound: false
+				},
+				managerQF06: {
+					idManager: 8,
+					codeManager: 'MIKKO',
+					altManager: 'MIKKO',
+					cups: 7,
+					positions: [
+						{position: 13}
+					],
+					score: 0,
+					winsRound: false
+				},
+				managerQF07: {
+					idManager: 26,
+					codeManager: 'JENS',
+					altManager: 'JENS',
+					cups: 0,
+					positions: [
+						{position: 13}
+					],
+					score: 0,
+					winsRound: false
+				},
+				managerQF08: {
+					idManager: 23,
+					codeManager: 'DANIEL',
+					altManager: 'DANIEL',
+					cups: 2,
+					positions: [
+						{position: 3}
+					],
+					score: 1,
 					winsRound: false
 				}
-			},
-			winner: {/*
-				idManager: 22,
-				codeManager: 'JENNE',
-				altManager: 'JENNE',
-				cups: 3*/
 			}
 		};
 
